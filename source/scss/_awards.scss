@@ -1,0 +1,67 @@
+.awards {
+   &__inner {
+      display: flex;
+   }
+
+   &__content {
+      flex: 1 0 50%;
+   }
+
+   &__heading {
+      font-weight: 600;
+      font-size: 52px;
+      line-height: 140%;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+   }
+
+   &__dots {
+      margin-bottom: 60px;
+   }
+
+   &__text {
+      font-size: 24px;
+      line-height: 120%;
+      letter-spacing: 0.03em;
+      max-width: 530px;
+   }
+
+   &__places {
+      flex: 1 0 50%;
+   }
+
+   &__table {
+      display: grid;
+      grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+   }
+
+   &__table-item {
+      border: 1px solid #898989;
+      padding: 35px 20px;
+      &--down {
+         margin: 40px 0 -40px 0;
+      }
+   }
+
+   &__table-heading {
+      font-weight: 600;
+      font-size: 36px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #db3138;
+      margin-bottom: 25px;
+      span {
+         font-size: 24px;
+      }
+   }
+
+   &__table-text {
+      font-weight: 600;
+      line-height: 140%;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+   }
+}
