@@ -2,9 +2,14 @@ var swiper = new Swiper(".images-slider", {
    slidesPerView: 3,
    spaceBetween: 25,
    loop: true,
+   autoplay: {
+      delay: 2500,
+      stopOnLastSlide: false,
+      disableOnInteraction: true,
+   },
    navigation: {
-      nextEl: '.button-slider__next',
-      prevEl: '.button-slider__prev',
+      nextEl: '.button-slider__next--gallery',
+      prevEl: '.button-slider__prev--gallery',
    },
    breakpoints: {
       320: {
@@ -19,12 +24,31 @@ var swiper = new Swiper(".images-slider", {
    }
 });
 
-var swiper = new Swiper(".works__slider", {
+var swiper = new Swiper(".works__slider--up", {
    slidesPerView: 1,
    loop: true,
    navigation: {
-      nextEl: '.button-slider__next',
-      prevEl: '.button-slider__prev',
+      nextEl: '.button-slider__next--up',
+      prevEl: '.button-slider__prev--up',
+   },
+   autoplay: {
+      delay: 2500,
+      stopOnLastSlide: false,
+      disableOnInteraction: true,
+   },
+});
+
+var swiper = new Swiper(".works__slider--bottom", {
+   slidesPerView: 1,
+   loop: true,
+   navigation: {
+      nextEl: '.button-slider__next--bottom',
+      prevEl: '.button-slider__prev--bottom',
+   },
+   autoplay: {
+      delay: 2500,
+      stopOnLastSlide: false,
+      disableOnInteraction: true,
    },
 });
 
